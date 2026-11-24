@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arham Juglan | Cyber Security Student</title>
+<meta name="description" content="Portfolio of Arham Juglan, B.Tech Cyber Security student at Dehradun, learning on TryHackMe.">
+<style>
+:root{--bg:#06100c;--card:#0d1b15;--text:#d8f3e5;--muted:#7da393;--accent:#2dff9a;--line:#1b3328}
+[data-theme="purple"]{--bg:#0d0814;--card:#170f24;--text:#eadfff;--muted:#a08bc4;--accent:#b46bff;--line:#2e2045}
+[data-theme="light"]{--bg:#f6f7f9;--card:#fff;--text:#14181f;--muted:#586272;--accent:#087a4d;--line:#dce0e6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:16px/1.65 "JetBrains Mono",ui-monospace,Consolas,monospace}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:10px 20px;align-items:center;justify-content:space-between;padding:12px 5vw;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+nav a:hover,.accent{color:var(--accent)}
+.themes button{background:none;border:1px solid var(--line);color:var(--text);padding:3px 10px;border-radius:6px;cursor:pointer;font:inherit;font-size:12px}
+section{padding:68px 5vw;max-width:1080px;margin:auto}
+h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.1;margin:10px 0 14px}
+h2{font-size:1.6rem;margin-bottom:22px}
+.muted{color:var(--muted)}
+.hero{display:flex;gap:36px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;font-size:2.2rem;font-weight:700;color:var(--accent);box-shadow:0 0 28px color-mix(in srgb,var(--accent) 35%,transparent)}
+.btn{display:inline-block;margin:18px 10px 0 0;padding:9px 18px;border:1px solid var(--accent);border-radius:6px;color:var(--accent);background:none;cursor:pointer;font:inherit;font-size:15px}
+.btn.fill{background:var(--accent);color:var(--bg)}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px}
+.stats b{display:block;font-size:1.8rem;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.card h3{font-size:1.05rem;margin-bottom:4px}
+.tag{display:inline-block;font-size:12px;padding:2px 10px;border:1px solid var(--line);border-radius:20px;margin:0 6px 6px 0;color:var(--muted)}
+.status{font-size:12px;color:var(--accent)}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.term{background:#000;color:#9dffcf;border:1px solid var(--line);border-radius:10px;padding:14px;height:270px;overflow:auto;font-size:14px}
+.term pre{white-space:pre-wrap;font:inherit}
+.term .row{display:flex;gap:8px}
+.term input{flex:1;background:none;border:0;outline:0;color:inherit;font:inherit}
+form{display:grid;gap:10px;max-width:500px;margin-top:22px}
+input,textarea{background:var(--card);border:1px solid var(--line);color:var(--text);padding:10px;border-radius:6px;font:inherit}
+.links{display:flex;gap:12px;flex-wrap:wrap}
+footer{text-align:center;padding:36px;color:var(--muted);border-top:1px solid var(--line);font-size:14px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <a href="#home"><b class="accent">&gt;_</b> arham</a>
+  <nav><a href="#about">About</a><a href="#tryhackme">TryHackMe</a><a href="#certs">Certificates</a><a href="#projects">Projects</a><a href="#terminal">Terminal</a><a href="#contact">Contact</a></nav>
+  <div class="themes"><button data-t="dark">Dark</button> <button data-t="purple">Purple</button> <button data-t="light">Light</button></div>
+</header>
+
+<section id="home">
+  <div class="hero">
+    <div class="avatar">AJ</div>
+    <div>
+      <p class="muted">Hi, I’m</p>
+      <h1>Arham Juglan</h1>
+      <p>B.Tech Cyber Security student (2027) learning by doing <span class="accent" id="typed"></span><span class="accent">|</span></p>
+      <p class="muted">Dehradun, Uttarakhand · Open to internships and entry-level roles</p>
+      <a class="btn fill" href="#tryhackme">See my progress</a><a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="stats">
+    <div><b>54</b><span class="muted">TryHackMe rooms</span></div>
+    <div><b>14</b><span class="muted">badges earned</span></div>
+    <div><b>1</b><span class="muted">learning path done</span></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p style="max-width:64ch">I’m a B.Tech Cyber Security student with an electronics engineering diploma and full stack web development training. I’m building my skills through hands-on labs, and I’m looking for an internship or entry-level role where I can learn from experienced people and contribute to the team.</p>
+  <div class="grid" style="margin-top:26px">
+    <div class="card"><h3>B.Tech, Cyber Security</h3><p class="muted">2024 – 2027 (pursuing)<br>Faculty of Technology, VMSB Uttarakhand Technical University, Dehradun</p></div>
+    <div class="card"><h3>Diploma, Electronics Engineering</h3><p class="muted">2023 · CGPA 7.0</p></div>
+    <div class="card"><h3>Full Stack Web Development</h3><p class="muted">2023 · 6-month course covering front-end and back-end basics</p></div>
+  </div>
+  <div style="margin-top:24px">
+    <span class="tag">Cyber security basics</span><span class="tag">CIA triad</span><span class="tag">Access control</span><span class="tag">Networking basics</span><span class="tag">Linux basics</span><span class="tag">HTML · CSS · JavaScript (basic)</span><span class="tag">MS Office</span><span class="tag">Hindi · English · Punjabi</span>
+  </div>
+</section>
+
+<section id="tryhackme">
+  <h2>TryHackMe</h2>
+  <p class="muted">Active since November 2025. Here are the badges I’ve earned so far:</p>
+  <div class="badges" id="badges"></div>
+  <a class="btn" href="https://tryhackme.com/p/juglantarun" target="_blank" rel="noopener">View my TryHackMe profile</a>
+</section>
+
+<section id="certs">
+  <h2>Certificates</h2>
+  <div class="grid">
+    <div class="card"><h3>Pre Security Learning Path</h3><p class="muted">TryHackMe · 20 November 2026<br>19 hours 10 minutes</p><a class="btn" href="https://tryhackme.com/certificate/THM-MP3X4CJHIJ" target="_blank" rel="noopener">Verify certificate</a></div>
+    <div class="card"><h3>Full Stack Web Development</h3><p class="muted">Course completion · 2023</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="muted" style="margin-bottom:18px">Honest status: I’m building these now and will add each one to GitHub as it’s finished.</p>
+  <div class="grid">
+    <div class="card"><span class="status">Live</span><h3>This portfolio</h3><p class="muted">Hand-coded with HTML, CSS and JavaScript, hosted on GitHub Pages.</p></div>
+    <div class="card"><span class="status">In progress</span><h3>TryHackMe write-ups</h3><p class="muted">Short notes on what I learned in each room and path.</p></div>
+    <div class="card"><span class="status">Planned</span><h3>Python port scanner</h3><p class="muted">A small script to find open ports, tested only on my own lab machines.</p></div>
+    <div class="card"><span class="status">Planned</span><h3>SSH log analyzer</h3><p class="muted">Finds failed logins and suspicious IPs in auth logs.</p></div>
+  </div>
+</section>
+
+<section id="terminal">
+  <h2>Terminal</h2>
+  <div class="term" id="term"><pre id="out">Type "help" to see commands.</pre>
+    <div class="row"><span>$</span><input id="cmd" autocomplete="off" aria-label="Terminal command"></div></div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="links">
+    <a class="btn" href="https://www.linkedin.com/in/arham-juglan-240731250" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/tarunjuglan" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="mailto:juglantarun@gmail.com">Email</a>
+  </div>
+  <form id="form">
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <textarea name="msg" rows="4" placeholder="Message" required></textarea>
+    <button class="btn fill" type="submit" style="margin:0">Send message</button>
+  </form>
+</section>
+
+<footer>© <span id="year"></span> Arham Juglan</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+$("#year").textContent = new Date().getFullYear();
+
+// Badges from TryHackMe profile
+["Hash Cracker","OhSINT","Mr. Robot","Boogeyman Slayer","Blue","Introduction to Security","Gold League","cat linux.txt","World Wide Web","Webbed","Networking Nerd","7 Day Streak","First Mobile Quiz","3 Day Streak"]
+  .forEach(b => $("#badges").insertAdjacentHTML("beforeend", `<span class="tag" style="color:var(--text)">${b}</span>`));
+
+// Theme
+function setTheme(t){ document.documentElement.dataset.theme = t; try{ localStorage.setItem("theme", t); }catch(e){} }
+try{ const t = localStorage.getItem("theme"); if(t) setTheme(t); }catch(e){}
+document.querySelector(".themes").onclick = e => { if(e.target.dataset.t) setTheme(e.target.dataset.t); };
+
+// Typing effect
+const words = ["on TryHackMe.", "with Linux labs.", "one room at a time."];
+let w = 0, c = 0, del = false;
+(function type(){
+  const word = words[w];
+  $("#typed").textContent = word.slice(0, c);
+  if(!del && c === word.length){ del = true; return setTimeout(type, 1400); }
+  if(del && c === 0){ del = false; w = (w + 1) % words.length; }
+  c += del ? -1 : 1;
+  setTimeout(type, del ? 40 : 85);
+})();
+
+// Terminal
+const CMD = {
+  help: () => "Commands: help, whoami, education, thm, certs, links, theme <dark|purple|light>, clear",
+  whoami: () => "Arham Juglan — B.Tech Cyber Security student (2027), Dehradun",
+  education: () => "B.Tech Cyber Security (2024-27)\nDiploma in Electronics Engineering (2023)",
+  thm: () => "TryHackMe: 54 rooms, 14 badges, Pre Security path complete",
+  certs: () => "Pre Security Learning Path (20 Nov 2026)\nFull Stack Web Development (2023)",
+  links: () => "github.com/tarunjuglan\ntryhackme.com/p/juglantarun\nlinkedin.com/in/arham-juglan-240731250"
+};
+$("#cmd").addEventListener("keydown", e => {
+  if(e.key !== "Enter") return;
+  const input = e.target.value.trim(); e.target.value = "";
+  const [name, arg] = input.split(" ");
+  if(name === "clear"){ $("#out").textContent = ""; return; }
+  let res;
+  if(name === "theme"){ setTheme(["dark","purple","light"].includes(arg) ? arg : "dark"); res = "Theme changed."; }
+  else res = CMD[name] ? CMD[name]() : "Command not found: " + name + ". Type help.";
+  $("#out").textContent += "\n$ " + input + "\n" + res;
+  $("#term").scrollTop = $("#term").scrollHeight;
+});
+
+// Contact form opens the visitor's email app
+$("#form").onsubmit = e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const body = encodeURIComponent(f.get("msg") + "\n\nFrom: " + f.get("name") + " (" + f.get("email") + ")");
+  location.href = "mailto:juglantarun@gmail.com?subject=" + encodeURIComponent("Portfolio message") + "&body=" + body;
+};
+</script>
+</body>
+</html>
